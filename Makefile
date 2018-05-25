@@ -2,6 +2,8 @@ FW_DIR	:= /lib/firmware/rtl_bt/
 MDL_DIR	:= /lib/modules/$(KERNEL_VERSION)
 DRV_DIR	:= $(MDL_DIR)/kernel/drivers/bluetooth
 EXTRA_CFLAGS += -DCONFIG_BT_RTL
+EXTRA_CFLAGS += -DCONFIG_BT_INTEL
+EXTRA_CFLAGS += -DCONFIG_BT_BCM
 
 ARCH := arm
 CROSS_COMPILE ?= 
